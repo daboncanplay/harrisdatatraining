@@ -12,11 +12,10 @@ resources:
       tasks:
         - task_key: run_setup
           notebook_task:
-            notebook_path: /Workspace/Users/dave@mindconstructor.com/course-setup-notebooks/data_setup
+            notebook_path: ./src/data_setup.ipynb
             source: WORKSPACE
       queue:
         enabled: true
-      performance_target: STANDARD
 
 targets:
   dev:
