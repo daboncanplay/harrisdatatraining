@@ -5,6 +5,19 @@
 bundle:
   name: Course Setup
 
+resources:
+  jobs:
+    Run_Data_Setup_Job:
+      name: Run Data Setup Job
+      tasks:
+        - task_key: run_setup
+          notebook_task:
+            notebook_path: /Workspace/Users/dave@mindconstructor.com/course-setup-notebooks/data_setup
+            source: WORKSPACE
+      queue:
+        enabled: true
+      performance_target: STANDARD
+
 targets:
   dev:
     mode: development
